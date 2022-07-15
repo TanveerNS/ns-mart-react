@@ -1,48 +1,9 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
-
 import Grid from './Grid'
+import { BsFacebook, BsInstagram, BsTwitter, BsGithub } from 'react-icons/bs';
+import { footerAboutLinks, footerCustomerLinks } from '../mockData'
 
-import logo from '../assets/images/Logo-2.png'
-
-const footerAboutLinks = [
-    {
-        display: "Giới thiệu",
-        path: "/about"
-    },
-    {
-        display: "Liên hệ",
-        path: "/about"
-    },
-    {
-        display: "Tuyển dụng",
-        path: "/about"
-    },
-    {
-        display: "Tin tức",
-        path: "/about"
-    },
-    {
-        display: "Hệ thống cửa hàng",
-        path: "/about"
-    }
-]
-
-const footerCustomerLinks = [
-    {
-        display: "Chính sách đổi trả",
-        path: "/about"
-    },
-    {
-        display: "Chính sách bảo hành",
-        path: "/about"
-    },
-    {
-        display: "Chính sách hoàn tiền",
-        path: "/about"
-    }
-]
 const Footer = () => {
     return (
         <footer className="footer">
@@ -53,25 +14,19 @@ const Footer = () => {
                     smCol={1}
                     gap={10}
                 >
-                    <div>
-                        <div className="footer__title">
-                            Tổng đài hỗ trợ
-                        </div>
-                        <div className="footer__content">
-                            <p>
-                                Liên hệ đặt hàng <strong>0123456789</strong>
-                            </p>
-                            <p>
-                                Thắc mắc đơn hàng <strong>0123456789</strong>
-                            </p>
-                            <p>
-                                Góp ý, khiếu nại <strong>0123456789</strong>
-                            </p>
-                        </div>
+                    <div className="footer__about">
+                        <p>
+                            <Link to="/">
+                                <span>NS-MART</span>
+                            </Link>
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        </p>
                     </div>
                     <div>
                         <div className="footer__title">
-                            Về Yolo
+                            Link
                         </div>
                         <div className="footer__content">
                             {
@@ -87,9 +42,10 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="footer__title">
-                            Chăm sóc khách hàng
+                            Quick Link
                         </div>
                         <div className="footer__content">
+
                             {
                                 footerCustomerLinks.map((item, index) => (
                                     <p key={index}>
@@ -101,15 +57,28 @@ const Footer = () => {
                             }
                         </div>
                     </div>
-                    <div className="footer__about">
-                        <p>
-                            <Link to="/">
-                                <img src={logo} className="footer__logo" alt="" />
-                            </Link>
-                        </p>
-                        <p>
-                            Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng Yolo hướng đến một cuộc sống năng động, tích cực hơn.
-                        </p>
+
+                    <div>
+                        <div className="footer__title">
+                            Follow Us
+                        </div>
+                        <div className="footer__content">
+                            <p>
+                                <span>
+                                    <Link to='/'><BsFacebook /></Link>
+                                </span>
+                                <span>
+                                    <Link to='/'><BsInstagram /></Link>
+                                </span>
+                                <span>
+                                    <Link to='/'><BsTwitter /></Link>
+                                </span>
+                                <span>
+                                    <Link to='/'><BsGithub /></Link>
+                                </span>
+
+                            </p>
+                        </div>
                     </div>
                 </Grid>
             </div>

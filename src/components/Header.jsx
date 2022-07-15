@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import {mainNav} from '../mockData'
-import logo from '../assets/images/Logo-2.png'
+import { HeaderScroll } from '../utils/Helpers'
 
 const Header = () => {
 
@@ -11,13 +11,7 @@ const Header = () => {
     const headerRef = useRef(null)
 
     useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                headerRef.current.classList.add('shrink')
-            } else {
-                headerRef.current.classList.remove('shrink')
-            }
-        })
+        HeaderScroll(headerRef)
         return () => {
             window.removeEventListener("scroll")
         };
@@ -32,7 +26,7 @@ const Header = () => {
             <div className="container">
                 <div className="header__logo">
                     <Link to="/">
-                        <img src={logo} alt="" />
+                        <h2>NS-MART</h2>
                     </Link>
                 </div>
                 <div className="header__menu">

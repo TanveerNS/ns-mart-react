@@ -2,14 +2,16 @@
     padding: 70px 0;
     box-shadow: $box-shadow;
     font-size: 1.1rem;
-
-    &__logo {
-        height: 38px;
-    }
+    background-color: #ddd;
 
     &__about {
         p {
             margin-bottom: 2rem;
+            
+            & span{
+                font-weight: 800;
+                font-size:2rem;
+            }
         }
     }
 
@@ -21,6 +23,10 @@
 
     &__content {
         p {
+            & span{
+                display: inline;
+                margin-right:0.5rem;
+            }
             margin-bottom: 1.25rem;
         }
     }

@@ -1,18 +1,48 @@
 export const mainNav = [
     {
-        display: "Trang chủ",
+        display: "Home",
         path: "/"
     },
     {
-        display: "Sản phẩm",
+        display: "Product",
         path: "/catalog"
     },
     {
-        display: "Phụ kiện",
+        display: "Accessories",
         path: "/accessories"
     },
     {
-        display: "Liên hệ",
+        display: "Contact",
         path: "/contact"
     }
+]
+
+export const footerAboutLinks = [
+    {
+        display: "Product",
+        path: "/"
+    },
+    {
+        display: "Category",
+        path: "/"
+    },
+    {
+        display: "Accessories",
+        path: "/"
+    },
+]
+
+export const footerCustomerLinks = [
+    {
+        display: "About",
+        path: "/"
+    },
+    {
+        display: "Contact Us",
+        path: "/"
+    },
+    {
+        display: "Privacy Policy",
+        path: "/"
+    },
 ]
