@@ -5,7 +5,7 @@ export const mainNav = [
     },
     {
         display: "Product",
-        path: "/catalog"
+        path: "/product"
     },
     {
         display: "Accessories",

@@ -16,7 +16,7 @@ import banner from '../assets/images/banner.png'
 
 const Home = () => {
     return (
-        <Helmet title="Trang chủ">
+        <Helmet title="NS-MART">
             {/* hero slider */}
             <HeroSlider
                 data={heroSliderData}
@@ -52,7 +52,7 @@ const Home = () => {
             {/* best selling section */}
             <Section>
                 <SectionTitle>
-                    top sản phẩm bán chạy trong tuần
+                Top selling products of the week
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -81,7 +81,7 @@ const Home = () => {
             {/* new arrival section */}
             <Section>
                 <SectionTitle>
-                    sản phẩm mới
+                    Featured Product
                 </SectionTitle>
                 <SectionBody>
                     <Grid
@@ -110,7 +110,7 @@ const Home = () => {
             {/* banner */}
             <Section>
                 <SectionBody>
-                    <Link to="/catalog">
+                    <Link to="/product">
                         <img src={banner} alt="" />
                     </Link>
                 </SectionBody>
@@ -120,7 +120,7 @@ const Home = () => {
             {/* popular product section */}
             <Section>
                 <SectionTitle>
-                    phổ biến
+                    Popular Product
                 </SectionTitle>
                 <SectionBody>
                     <Grid

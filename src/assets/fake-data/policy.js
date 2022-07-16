@@ -1,22 +1,22 @@
 const policy = [
     {
-        name: "Miễn phí giao hàng",
-        description: "Miễn phí ship với đơn hàng > 239K",
+        name: "Lorem Ipsum is simply ",
+        description: "Lorem Ipsum is simply > 239K",
         icon: "bx bx-shopping-bag"
     },
     {
-        name: "Thanh toán COD",
-        description: "Thanh toán khi nhận hàng (COD)",
+        name: "Lorem Ipsum is simply",
+        description: "Lorem Ipsum is simply",
         icon: "bx bx-credit-card"
     },
     {
-        name: "Khách hàng VIP",
-        description: "Ưu đãi dành cho khách hàng VIP",
+        name: "Lorem Ipsum is simply",
+        description: "Lorem Ipsum is simply",
         icon: "bx bx-diamond"
     },
     {
-        name: "Hỗ trợ bảo hành",
-        description: "Đổi, sửa đồ tại tất cả store",
+        name: "Lorem Ipsum is simply",
+        description: "Lorem Ipsum is simply",
         icon: "bx bx-donate-heart"
     }
 ]

@@ -32,19 +32,19 @@ const Cart = () => {
                 <div className="cart__info">
                     <div className="cart__info__txt">
                         <p>
-                            Bạn đang có {totalProducts} sản phẩm trong giỏ hàng
+                            You have {totalProducts} products in your cart
                         </p>
                         <div className="cart__info__txt__price">
-                            <span>Thành tiền:</span> <span>{numberWithCommas(Number(totalPrice))}</span>
+                            <span>Total Price:</span> <span>{numberWithCommas(Number(totalPrice))}</span>
                         </div>
                     </div>
                     <div className="cart__info__btn">
                         <Button size="block">
-                            Đặt hàng
+                            Order
                         </Button>
-                        <Link to="/catalog">
+                        <Link to="/product">
                             <Button size="block">
-                                Tiếp tục mua hàng
+                                Continue Shopping
                             </Button>
                         </Link>
                         

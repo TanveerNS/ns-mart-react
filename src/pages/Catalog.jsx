@@ -103,7 +103,7 @@ const Catalog = () => {
                     </div>
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__title">
-                            danh mục sản phẩm
+                            Product
                         </div>
                         <div className="catalog__filter__widget__content">
                             {
@@ -122,7 +122,7 @@ const Catalog = () => {
 
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__title">
-                            màu sắc
+                            Color
                         </div>
                         <div className="catalog__filter__widget__content">
                             {
@@ -141,7 +141,7 @@ const Catalog = () => {
 
                     <div className="catalog__filter__widget">
                         <div className="catalog__filter__widget__title">
-                            kích cỡ
+                            Size
                         </div>
                         <div className="catalog__filter__widget__content">
                             {
